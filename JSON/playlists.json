@@ -1,0 +1,649 @@
+{
+  "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists?offset=0&limit=20",
+  "items" : [ {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/paulgriffin/playlist/0US6Wsz173q3IP2D4F3nCs"
+    },
+    "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/0US6Wsz173q3IP2D4F3nCs",
+    "id" : "0US6Wsz173q3IP2D4F3nCs",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://mosaic.scdn.co/640/5df3e79a3a79a899930c22dd244c4e8999ebccfb0d17fea2714eaf029bf8269ad127b194282fcdc6053c8dc51283e2b5f105e6d24c3a063dd87b6842a57625bbecee7b4e7fe932a31cd92319d2a32855",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://mosaic.scdn.co/300/5df3e79a3a79a899930c22dd244c4e8999ebccfb0d17fea2714eaf029bf8269ad127b194282fcdc6053c8dc51283e2b5f105e6d24c3a063dd87b6842a57625bbecee7b4e7fe932a31cd92319d2a32855",
+      "width" : 300
+    }, {
+      "height" : 60,
+      "url" : "https://mosaic.scdn.co/60/5df3e79a3a79a899930c22dd244c4e8999ebccfb0d17fea2714eaf029bf8269ad127b194282fcdc6053c8dc51283e2b5f105e6d24c3a063dd87b6842a57625bbecee7b4e7fe932a31cd92319d2a32855",
+      "width" : 60
+    } ],
+    "name" : "New Playlist 3",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/paulgriffin"
+      },
+      "href" : "https://api.spotify.com/v1/users/paulgriffin",
+      "id" : "paulgriffin",
+      "type" : "user",
+      "uri" : "spotify:user:paulgriffin"
+    },
+    "public" : false,
+    "snapshot_id" : "D/Dp1UO71pSXERziClYLNQlSTQNEjA2wGCOtaXhGBWcbnV2L6D+B8fXRm8SxRP6h",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/0US6Wsz173q3IP2D4F3nCs/tracks",
+      "total" : 9
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:paulgriffin:playlist:0US6Wsz173q3IP2D4F3nCs"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/paulgriffin/playlist/2OxGfkz62Epm4GHjGAnewy"
+    },
+    "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/2OxGfkz62Epm4GHjGAnewy",
+    "id" : "2OxGfkz62Epm4GHjGAnewy",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://mosaic.scdn.co/640/65c5610d5b8b4186e1ed7eac05073ed397f58ee585612245f22c9d17505140378c8f477ba95c165fa9a7cbae5815328a98286575e623a2077a8418c76f27ce9947e149bc62b5ea565e9564faeb6b4a37",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://mosaic.scdn.co/300/65c5610d5b8b4186e1ed7eac05073ed397f58ee585612245f22c9d17505140378c8f477ba95c165fa9a7cbae5815328a98286575e623a2077a8418c76f27ce9947e149bc62b5ea565e9564faeb6b4a37",
+      "width" : 300
+    }, {
+      "height" : 60,
+      "url" : "https://mosaic.scdn.co/60/65c5610d5b8b4186e1ed7eac05073ed397f58ee585612245f22c9d17505140378c8f477ba95c165fa9a7cbae5815328a98286575e623a2077a8418c76f27ce9947e149bc62b5ea565e9564faeb6b4a37",
+      "width" : 60
+    } ],
+    "name" : "New Playlist 2",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/paulgriffin"
+      },
+      "href" : "https://api.spotify.com/v1/users/paulgriffin",
+      "id" : "paulgriffin",
+      "type" : "user",
+      "uri" : "spotify:user:paulgriffin"
+    },
+    "public" : false,
+    "snapshot_id" : "YR2j82I2AsyC3I6AT/v6WEdKWsPlA/teHJgFcUEpmlh0wPV5Xwlo2eGIhEx8SHIx",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/2OxGfkz62Epm4GHjGAnewy/tracks",
+      "total" : 28
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:paulgriffin:playlist:2OxGfkz62Epm4GHjGAnewy"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/paulgriffin/playlist/4nsi8xlIf8bRimOc2zonEx"
+    },
+    "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/4nsi8xlIf8bRimOc2zonEx",
+    "id" : "4nsi8xlIf8bRimOc2zonEx",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/950bcc43253a741c7cc5d4285dff3d5f258482d3",
+      "width" : 640
+    } ],
+    "name" : "Den svenska björnstammen – I förhållande till (Instrumental)",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/paulgriffin"
+      },
+      "href" : "https://api.spotify.com/v1/users/paulgriffin",
+      "id" : "paulgriffin",
+      "type" : "user",
+      "uri" : "spotify:user:paulgriffin"
+    },
+    "public" : false,
+    "snapshot_id" : "eYQ4i/WbF6/hX2g+f56eMJ1d7gAucUU6gcG6DQzhJ/4MtuGLz/tT8D33HQZi6LUG",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/4nsi8xlIf8bRimOc2zonEx/tracks",
+      "total" : 13
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:paulgriffin:playlist:4nsi8xlIf8bRimOc2zonEx"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/spotify__sverige/playlist/0sRlLiCa8VDRBg0ztd8h4p"
+    },
+    "href" : "https://api.spotify.com/v1/users/spotify__sverige/playlists/0sRlLiCa8VDRBg0ztd8h4p",
+    "id" : "0sRlLiCa8VDRBg0ztd8h4p",
+    "images" : [ {
+      "height" : null,
+      "url" : "https://u.scdn.co/images/pl/default/115bf99d8e500f16d9700998ba0c148acefa4cf1",
+      "width" : null
+    } ],
+    "name" : "SKAM",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/spotify__sverige"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify__sverige",
+      "id" : "spotify__sverige",
+      "type" : "user",
+      "uri" : "spotify:user:spotify__sverige"
+    },
+    "public" : false,
+    "snapshot_id" : "cXADgsWD/RrP5YsBC8pFccsotwCvx5XxciRcrMyl2w2SWguRk8C5HGwnZC4Fcfp9",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/spotify__sverige/playlists/0sRlLiCa8VDRBg0ztd8h4p/tracks",
+      "total" : 61
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:spotify__sverige:playlist:0sRlLiCa8VDRBg0ztd8h4p"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/spotify/playlist/37i9dQZF1CyMsYnMbMU2E3"
+    },
+    "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1CyMsYnMbMU2E3",
+    "id" : "37i9dQZF1CyMsYnMbMU2E3",
+    "images" : [ {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/e25ca9fb548a9c1f51fbc74289307e37fa8ae176",
+      "width" : 300
+    } ],
+    "name" : "Your Top Songs 2016",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/spotify"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify",
+      "id" : "spotify",
+      "type" : "user",
+      "uri" : "spotify:user:spotify"
+    },
+    "public" : false,
+    "snapshot_id" : "bmknLixSvY3iN6WXWsV2+Y07dJwDr2YCFphUtQhK8Xyvy+HIFOmBnwiEFWY5CYKjiSzNDkB8AeY=",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZF1CyMsYnMbMU2E3/tracks",
+      "total" : 101
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:spotify:playlist:37i9dQZF1CyMsYnMbMU2E3"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/jojo_love_life/playlist/5GUB1pt9CjxHrTzDIc0Vvv"
+    },
+    "href" : "https://api.spotify.com/v1/users/jojo_love_life/playlists/5GUB1pt9CjxHrTzDIc0Vvv",
+    "id" : "5GUB1pt9CjxHrTzDIc0Vvv",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://mosaic.scdn.co/640/0f28b2911744be7b0c4dc081b76d181841cc2ea5cd6cc5807ecd24fb9854976b77413008f1cd40921985a0f3b3a312941e07dae12f368f460af6d9318df4ee4ec7b18e92e2f27575a384ec3b7d304117",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://mosaic.scdn.co/300/0f28b2911744be7b0c4dc081b76d181841cc2ea5cd6cc5807ecd24fb9854976b77413008f1cd40921985a0f3b3a312941e07dae12f368f460af6d9318df4ee4ec7b18e92e2f27575a384ec3b7d304117",
+      "width" : 300
+    }, {
+      "height" : 60,
+      "url" : "https://mosaic.scdn.co/60/0f28b2911744be7b0c4dc081b76d181841cc2ea5cd6cc5807ecd24fb9854976b77413008f1cd40921985a0f3b3a312941e07dae12f368f460af6d9318df4ee4ec7b18e92e2f27575a384ec3b7d304117",
+      "width" : 60
+    } ],
+    "name" : "höst eller vinter kanske",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/jojo_love_life"
+      },
+      "href" : "https://api.spotify.com/v1/users/jojo_love_life",
+      "id" : "jojo_love_life",
+      "type" : "user",
+      "uri" : "spotify:user:jojo_love_life"
+    },
+    "public" : false,
+    "snapshot_id" : "9fRYjj9SmV/nd3U7JYx0WE3NiEwRualDqEIp0s0eEbRR1VYTFkjf4GwFIFMzUgFX",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/jojo_love_life/playlists/5GUB1pt9CjxHrTzDIc0Vvv/tracks",
+      "total" : 29
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:jojo_love_life:playlist:5GUB1pt9CjxHrTzDIc0Vvv"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/spotify/playlist/37i9dQZEVXcU4vZKWrg8ln"
+    },
+    "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZEVXcU4vZKWrg8ln",
+    "id" : "37i9dQZEVXcU4vZKWrg8ln",
+    "images" : [ {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/6682aad217c11156e6d8985036996f1ea7ebb518",
+      "width" : 300
+    } ],
+    "name" : "Discover Weekly",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/spotify"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify",
+      "id" : "spotify",
+      "type" : "user",
+      "uri" : "spotify:user:spotify"
+    },
+    "public" : false,
+    "snapshot_id" : "H0k6dcm6CmviN6WXWsV2+S44pjU7T7XTYZxqHTR6ON1AFkK9KWHd9au2skzl+4SMFa2j2GKvxUk=",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZEVXcU4vZKWrg8ln/tracks",
+      "total" : 30
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:spotify:playlist:37i9dQZEVXcU4vZKWrg8ln"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/paulgriffin/playlist/417OcmEk8W7XAhnYgVSTTY"
+    },
+    "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/417OcmEk8W7XAhnYgVSTTY",
+    "id" : "417OcmEk8W7XAhnYgVSTTY",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/d492f5651f4516a46af4f97db2b0355b4a74622e",
+      "width" : 640
+    } ],
+    "name" : "klot",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/paulgriffin"
+      },
+      "href" : "https://api.spotify.com/v1/users/paulgriffin",
+      "id" : "paulgriffin",
+      "type" : "user",
+      "uri" : "spotify:user:paulgriffin"
+    },
+    "public" : false,
+    "snapshot_id" : "o8XHgi676k5FOa/FaGizXIIqOH8rz0Vj8e8ePbQVwfXWKzpVCqQyTp4tQAbj2vq2",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/417OcmEk8W7XAhnYgVSTTY/tracks",
+      "total" : 1
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:paulgriffin:playlist:417OcmEk8W7XAhnYgVSTTY"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/paulgriffin/playlist/0lPqwunhz2YSPmBVIAW0Do"
+    },
+    "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/0lPqwunhz2YSPmBVIAW0Do",
+    "id" : "0lPqwunhz2YSPmBVIAW0Do",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://mosaic.scdn.co/640/8398857ccd6374b1e1edf2328be26616e981c7f17a2219cded11069b86ef8c8d5934305c6cbc8863f5541c9aec59441ffedf5ebaddb31b2bd2218ed4aab76237ae6486645f0fdd6ddec4d2179a8c9ea1",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://mosaic.scdn.co/300/8398857ccd6374b1e1edf2328be26616e981c7f17a2219cded11069b86ef8c8d5934305c6cbc8863f5541c9aec59441ffedf5ebaddb31b2bd2218ed4aab76237ae6486645f0fdd6ddec4d2179a8c9ea1",
+      "width" : 300
+    }, {
+      "height" : 60,
+      "url" : "https://mosaic.scdn.co/60/8398857ccd6374b1e1edf2328be26616e981c7f17a2219cded11069b86ef8c8d5934305c6cbc8863f5541c9aec59441ffedf5ebaddb31b2bd2218ed4aab76237ae6486645f0fdd6ddec4d2179a8c9ea1",
+      "width" : 60
+    } ],
+    "name" : "Sova",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/paulgriffin"
+      },
+      "href" : "https://api.spotify.com/v1/users/paulgriffin",
+      "id" : "paulgriffin",
+      "type" : "user",
+      "uri" : "spotify:user:paulgriffin"
+    },
+    "public" : false,
+    "snapshot_id" : "L64r2wbGGgyJjtx/rgt77hImmpO2CSmb2BqO8j71Q+P6NA82W3JOrIaO5A3xQ+TK",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/0lPqwunhz2YSPmBVIAW0Do/tracks",
+      "total" : 8
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:paulgriffin:playlist:0lPqwunhz2YSPmBVIAW0Do"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/spotifycares/playlist/50OnSr6gf6qQf5cAd7HavS"
+    },
+    "href" : "https://api.spotify.com/v1/users/spotifycares/playlists/50OnSr6gf6qQf5cAd7HavS",
+    "id" : "50OnSr6gf6qQf5cAd7HavS",
+    "images" : [ {
+      "height" : null,
+      "url" : "https://u.scdn.co/images/pl/default/e9d5f07fb5c19c4d974833b7471a0df66d359355",
+      "width" : null
+    } ],
+    "name" : "A proposal from @alterhate",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/spotifycares"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotifycares",
+      "id" : "spotifycares",
+      "type" : "user",
+      "uri" : "spotify:user:spotifycares"
+    },
+    "public" : false,
+    "snapshot_id" : "gGxDHLqnRhdlRRNWIhuqsT5ELh0IiZfo7T/XFTjP6ia22HQUwX/p4HAYJPu3HN46",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/spotifycares/playlists/50OnSr6gf6qQf5cAd7HavS/tracks",
+      "total" : 18
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:spotifycares:playlist:50OnSr6gf6qQf5cAd7HavS"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/spotify/playlist/37i9dQZEVXbfQP8IK3mWQ5"
+    },
+    "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZEVXbfQP8IK3mWQ5",
+    "id" : "37i9dQZEVXbfQP8IK3mWQ5",
+    "images" : [ {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/158cb7e38c8d0134b35f292cf3e177eca2199552",
+      "width" : 300
+    } ],
+    "name" : "Release Radar",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/spotify"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify",
+      "id" : "spotify",
+      "type" : "user",
+      "uri" : "spotify:user:spotify"
+    },
+    "public" : false,
+    "snapshot_id" : "a/KBtSyBfSDiN6WXWsV2+RfX3IvpX2jzytvsOsOyunvkfivliGkFYHrz1AVQ2M7biSzNDkB8AeY=",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/37i9dQZEVXbfQP8IK3mWQ5/tracks",
+      "total" : 30
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:spotify:playlist:37i9dQZEVXbfQP8IK3mWQ5"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/paulgriffin/playlist/7Ew4AI5WsWymiqBGY9iNXb"
+    },
+    "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/7Ew4AI5WsWymiqBGY9iNXb",
+    "id" : "7Ew4AI5WsWymiqBGY9iNXb",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://mosaic.scdn.co/640/645b77989a1df5cc65f342750b68d15bd30a13eae915f5f4f8fd577d2a62901f5c555967668c37c9a4d3853cc7a965fca33ef33b03474e3c78d296cc45bec52b528374350b3d5f1cd1fe719a6bd7b683",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://mosaic.scdn.co/300/645b77989a1df5cc65f342750b68d15bd30a13eae915f5f4f8fd577d2a62901f5c555967668c37c9a4d3853cc7a965fca33ef33b03474e3c78d296cc45bec52b528374350b3d5f1cd1fe719a6bd7b683",
+      "width" : 300
+    }, {
+      "height" : 60,
+      "url" : "https://mosaic.scdn.co/60/645b77989a1df5cc65f342750b68d15bd30a13eae915f5f4f8fd577d2a62901f5c555967668c37c9a4d3853cc7a965fca33ef33b03474e3c78d296cc45bec52b528374350b3d5f1cd1fe719a6bd7b683",
+      "width" : 60
+    } ],
+    "name" : "Complete sound",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/paulgriffin"
+      },
+      "href" : "https://api.spotify.com/v1/users/paulgriffin",
+      "id" : "paulgriffin",
+      "type" : "user",
+      "uri" : "spotify:user:paulgriffin"
+    },
+    "public" : false,
+    "snapshot_id" : "fApCmgoNgTIZ3TRudCG1o7rkG+wo0Esg1ZG3JxivizKXRKM+jc3iW4LAMS1MaQ9c",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/7Ew4AI5WsWymiqBGY9iNXb/tracks",
+      "total" : 7
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:paulgriffin:playlist:7Ew4AI5WsWymiqBGY9iNXb"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/paulgriffin/playlist/6fbHf1q5dbEUapfnoOzrRc"
+    },
+    "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/6fbHf1q5dbEUapfnoOzrRc",
+    "id" : "6fbHf1q5dbEUapfnoOzrRc",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://mosaic.scdn.co/640/a800eba2d9102cb63ba0044a16641c345db438c3901ab6805eb5bdb4512f40f350aa774411d340d9aab76237ae6486645f0fdd6ddec4d2179a8c9ea180a8ede56ed4fb23d241f5f1770773c1e6fe0b99",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://mosaic.scdn.co/300/a800eba2d9102cb63ba0044a16641c345db438c3901ab6805eb5bdb4512f40f350aa774411d340d9aab76237ae6486645f0fdd6ddec4d2179a8c9ea180a8ede56ed4fb23d241f5f1770773c1e6fe0b99",
+      "width" : 300
+    }, {
+      "height" : 60,
+      "url" : "https://mosaic.scdn.co/60/a800eba2d9102cb63ba0044a16641c345db438c3901ab6805eb5bdb4512f40f350aa774411d340d9aab76237ae6486645f0fdd6ddec4d2179a8c9ea180a8ede56ed4fb23d241f5f1770773c1e6fe0b99",
+      "width" : 60
+    } ],
+    "name" : "Ny spellista 2",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/paulgriffin"
+      },
+      "href" : "https://api.spotify.com/v1/users/paulgriffin",
+      "id" : "paulgriffin",
+      "type" : "user",
+      "uri" : "spotify:user:paulgriffin"
+    },
+    "public" : false,
+    "snapshot_id" : "V14sVDjBBP1lQIjox1oeoSAYjqZ3oNHnoLHMAG9wujM9glxsDVrBKE7P56FOhOA1",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/6fbHf1q5dbEUapfnoOzrRc/tracks",
+      "total" : 55
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:paulgriffin:playlist:6fbHf1q5dbEUapfnoOzrRc"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/paulgriffin/playlist/5uGoT0aj870ZFchbaqQQ0T"
+    },
+    "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/5uGoT0aj870ZFchbaqQQ0T",
+    "id" : "5uGoT0aj870ZFchbaqQQ0T",
+    "images" : [ ],
+    "name" : "Du borde",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/paulgriffin"
+      },
+      "href" : "https://api.spotify.com/v1/users/paulgriffin",
+      "id" : "paulgriffin",
+      "type" : "user",
+      "uri" : "spotify:user:paulgriffin"
+    },
+    "public" : false,
+    "snapshot_id" : "wz+on3AgtYekaz8gBoQezQAxID22r+aTpSLsuFDYgNjhWOFAZDLaMcboqe3BT+P8",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/5uGoT0aj870ZFchbaqQQ0T/tracks",
+      "total" : 0
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:paulgriffin:playlist:5uGoT0aj870ZFchbaqQQ0T"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/paulgriffin/playlist/35Qx0zcX0WeGY3l28FTbKb"
+    },
+    "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/35Qx0zcX0WeGY3l28FTbKb",
+    "id" : "35Qx0zcX0WeGY3l28FTbKb",
+    "images" : [ ],
+    "name" : "logga ut",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/paulgriffin"
+      },
+      "href" : "https://api.spotify.com/v1/users/paulgriffin",
+      "id" : "paulgriffin",
+      "type" : "user",
+      "uri" : "spotify:user:paulgriffin"
+    },
+    "public" : false,
+    "snapshot_id" : "img2ANKFX5eTZZfIwYFs1kqwwSUufyDpQz2+dYUyXMYoRQSkgQoQSXMsg49yeuKV",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/35Qx0zcX0WeGY3l28FTbKb/tracks",
+      "total" : 0
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:paulgriffin:playlist:35Qx0zcX0WeGY3l28FTbKb"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/paulgriffin/playlist/7LcjnInYPsCl4XGm2fr2U2"
+    },
+    "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/7LcjnInYPsCl4XGm2fr2U2",
+    "id" : "7LcjnInYPsCl4XGm2fr2U2",
+    "images" : [ ],
+    "name" : "från IO",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/paulgriffin"
+      },
+      "href" : "https://api.spotify.com/v1/users/paulgriffin",
+      "id" : "paulgriffin",
+      "type" : "user",
+      "uri" : "spotify:user:paulgriffin"
+    },
+    "public" : false,
+    "snapshot_id" : "nza+8XkiGEf2gaZF1FC+2rk1BG1KjjgCisP1PedgxiZU3ZmlrBmp7DFicGMRGl0z",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/7LcjnInYPsCl4XGm2fr2U2/tracks",
+      "total" : 0
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:paulgriffin:playlist:7LcjnInYPsCl4XGm2fr2U2"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/paulgriffin/playlist/5BtDM1EZI3KOHVN4hVGGXe"
+    },
+    "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/5BtDM1EZI3KOHVN4hVGGXe",
+    "id" : "5BtDM1EZI3KOHVN4hVGGXe",
+    "images" : [ ],
+    "name" : "nästa gång",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/paulgriffin"
+      },
+      "href" : "https://api.spotify.com/v1/users/paulgriffin",
+      "id" : "paulgriffin",
+      "type" : "user",
+      "uri" : "spotify:user:paulgriffin"
+    },
+    "public" : false,
+    "snapshot_id" : "fpZXemRoJ8HN1xOMcK08lndG7XURPI+jwY4NqnDahEZ09TmB7YfP1CZi+Zy32FH+",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/5BtDM1EZI3KOHVN4hVGGXe/tracks",
+      "total" : 0
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:paulgriffin:playlist:5BtDM1EZI3KOHVN4hVGGXe"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/paulgriffin/playlist/604d3hn6H2OvhyXf1zCHMi"
+    },
+    "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/604d3hn6H2OvhyXf1zCHMi",
+    "id" : "604d3hn6H2OvhyXf1zCHMi",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/f5560d22e6769be9f0d49c51bc476993862dde88",
+      "width" : 640
+    } ],
+    "name" : "Onani",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/paulgriffin"
+      },
+      "href" : "https://api.spotify.com/v1/users/paulgriffin",
+      "id" : "paulgriffin",
+      "type" : "user",
+      "uri" : "spotify:user:paulgriffin"
+    },
+    "public" : false,
+    "snapshot_id" : "VnD8bIDG8iNcl0qZ3QcYzs6AZr9XgtF5E7rcor+g0sgO/gBFzGo+ax6MQoKsTEqW",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/604d3hn6H2OvhyXf1zCHMi/tracks",
+      "total" : 1536
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:paulgriffin:playlist:604d3hn6H2OvhyXf1zCHMi"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/paulgriffin/playlist/0jOLKUkyAHo0GXAGrkbieI"
+    },
+    "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/0jOLKUkyAHo0GXAGrkbieI",
+    "id" : "0jOLKUkyAHo0GXAGrkbieI",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/1e20b659e0ad162ef57b7a9eb3461556ba47fab8",
+      "width" : 640
+    } ],
+    "name" : "Krig",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/paulgriffin"
+      },
+      "href" : "https://api.spotify.com/v1/users/paulgriffin",
+      "id" : "paulgriffin",
+      "type" : "user",
+      "uri" : "spotify:user:paulgriffin"
+    },
+    "public" : false,
+    "snapshot_id" : "4c0tLw9b+SbGEVNs1rXeKaP/6UxlNzwFpawskExSmubw8mVLew1W9rMTR8d0OCP2",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/paulgriffin/playlists/0jOLKUkyAHo0GXAGrkbieI/tracks",
+      "total" : 2
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:paulgriffin:playlist:0jOLKUkyAHo0GXAGrkbieI"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/jojo_love_life/playlist/1pr6aacKwZ2fgqrdWIM5Eg"
+    },
+    "href" : "https://api.spotify.com/v1/users/jojo_love_life/playlists/1pr6aacKwZ2fgqrdWIM5Eg",
+    "id" : "1pr6aacKwZ2fgqrdWIM5Eg",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://mosaic.scdn.co/640/70856fb86a5f4d55b69fb3a07b7b6cc18d9deaa70a16c89b313ada7f8d935ebddebdf610377d4ae5d91753c501bd9a62abb47d79fe367f7c13f881163d9073469a524822072092f1eee7da246ef303b3",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://mosaic.scdn.co/300/70856fb86a5f4d55b69fb3a07b7b6cc18d9deaa70a16c89b313ada7f8d935ebddebdf610377d4ae5d91753c501bd9a62abb47d79fe367f7c13f881163d9073469a524822072092f1eee7da246ef303b3",
+      "width" : 300
+    }, {
+      "height" : 60,
+      "url" : "https://mosaic.scdn.co/60/70856fb86a5f4d55b69fb3a07b7b6cc18d9deaa70a16c89b313ada7f8d935ebddebdf610377d4ae5d91753c501bd9a62abb47d79fe367f7c13f881163d9073469a524822072092f1eee7da246ef303b3",
+      "width" : 60
+    } ],
+    "name" : "sommar yoooo",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/jojo_love_life"
+      },
+      "href" : "https://api.spotify.com/v1/users/jojo_love_life",
+      "id" : "jojo_love_life",
+      "type" : "user",
+      "uri" : "spotify:user:jojo_love_life"
+    },
+    "public" : false,
+    "snapshot_id" : "t5juEaIiVVtqj8zoskbuRwmxbZaC8kUzPmGDM0RnoC0tWCN75ldyOHQXwo0zJZcg",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/jojo_love_life/playlists/1pr6aacKwZ2fgqrdWIM5Eg/tracks",
+      "total" : 43
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:jojo_love_life:playlist:1pr6aacKwZ2fgqrdWIM5Eg"
+  } ],
+  "limit" : 20,
+  "next" : "https://api.spotify.com/v1/users/paulgriffin/playlists?offset=20&limit=20",
+  "offset" : 0,
+  "previous" : null,
+  "total" : 139
+}
