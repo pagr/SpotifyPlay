@@ -1,13 +1,13 @@
 //
 //  ExternalIds.swift
 //
-//  Created by Paul Griffin on 2017-03-22
+//  Created by Paul Griffin on 2017-03-23
 //  Copyright (c) . All rights reserved.
 //
 
 import Foundation
 
-public struct ExternalIds: Unmarshaling {
+public struct ExternalIds {
 
   // MARK: Declaration for string constants to be used to decode and also serialize.
   private struct SerializationKeys {
@@ -17,13 +17,20 @@ public struct ExternalIds: Unmarshaling {
   // MARK: Properties
   public var isrc: String?
 
-  // MARK: Marshal Initializers
-
-  /// Map a JSON object to this class using Marshal.
+  // MARK: SwiftyJSON Initializers
+  /// Initiates the instance based on the object.
   ///
-  /// - parameter object: A mapping from ObjectMapper
-  public init(object: MarshaledObject) {
-    isrc = try? object.value(for: SerializationKeys.isrc)
+  /// - parameter object: The object of either Dictionary or Array kind that was passed.
+  /// - returns: An initialized instance of the class.
+  public init(object: Any) {
+    self.init(json: JSON(object))
+  }
+
+  /// Initiates the instance based on the JSON that was passed.
+  ///
+  /// - parameter json: JSON object from SwiftyJSON.
+  public init(json: JSON) {
+    isrc = json[SerializationKeys.isrc].string
   }
 
   /// Generates description of the object in the form of a NSDictionary.

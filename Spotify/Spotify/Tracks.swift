@@ -1,44 +1,51 @@
 //
-//  Playlists.swift
+//  Tracks.swift
 //
-//  Created by Paul Griffin on 2017-03-22
+//  Created by Paul Griffin on 2017-03-23
 //  Copyright (c) . All rights reserved.
 //
 
 import Foundation
 
-public struct Playlists: Unmarshaling {
+public struct Tracks {
 
   // MARK: Declaration for string constants to be used to decode and also serialize.
   private struct SerializationKeys {
     static let limit = "limit"
     static let href = "href"
+    static let total = "total"
     static let offset = "offset"
     static let next = "next"
-    static let total = "total"
     static let items = "items"
   }
 
   // MARK: Properties
   public var limit: Int?
   public var href: String?
+  public var total: Int?
   public var offset: Int?
   public var next: String?
-  public var total: Int?
   public var items: [Items]?
 
-  // MARK: Marshal Initializers
-
-  /// Map a JSON object to this class using Marshal.
+  // MARK: SwiftyJSON Initializers
+  /// Initiates the instance based on the object.
   ///
-  /// - parameter object: A mapping from ObjectMapper
-  public init(object: MarshaledObject) {
-    limit = try? object.value(for: SerializationKeys.limit)
-    href = try? object.value(for: SerializationKeys.href)
-    offset = try? object.value(for: SerializationKeys.offset)
-    next = try? object.value(for: SerializationKeys.next)
-    total = try? object.value(for: SerializationKeys.total)
-    items = try? object.value(for: SerializationKeys.items)
+  /// - parameter object: The object of either Dictionary or Array kind that was passed.
+  /// - returns: An initialized instance of the class.
+  public init(object: Any) {
+    self.init(json: JSON(object))
+  }
+
+  /// Initiates the instance based on the JSON that was passed.
+  ///
+  /// - parameter json: JSON object from SwiftyJSON.
+  public init(json: JSON) {
+    limit = json[SerializationKeys.limit].int
+    href = json[SerializationKeys.href].string
+    total = json[SerializationKeys.total].int
+    offset = json[SerializationKeys.offset].int
+    next = json[SerializationKeys.next].string
+    if let items = json[SerializationKeys.items].array { self.items = items.map { Items(json: $0) } }
   }
 
   /// Generates description of the object in the form of a NSDictionary.
@@ -48,9 +55,9 @@ public struct Playlists: Unmarshaling {
     var dictionary: [String: Any] = [:]
     if let value = limit { dictionary[SerializationKeys.limit] = value }
     if let value = href { dictionary[SerializationKeys.href] = value }
+    if let value = total { dictionary[SerializationKeys.total] = value }
     if let value = offset { dictionary[SerializationKeys.offset] = value }
     if let value = next { dictionary[SerializationKeys.next] = value }
-    if let value = total { dictionary[SerializationKeys.total] = value }
     if let value = items { dictionary[SerializationKeys.items] = value.map { $0.dictionaryRepresentation() } }
     return dictionary
   }

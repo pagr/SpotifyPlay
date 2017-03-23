@@ -1,13 +1,13 @@
 //
 //  Artists.swift
 //
-//  Created by Paul Griffin on 2017-03-22
+//  Created by Paul Griffin on 2017-03-23
 //  Copyright (c) . All rights reserved.
 //
 
 import Foundation
 
-public struct Artists: Unmarshaling {
+public struct Artists {
 
   // MARK: Declaration for string constants to be used to decode and also serialize.
   private struct SerializationKeys {
@@ -37,23 +37,30 @@ public struct Artists: Unmarshaling {
   public var items: [Items]?
   public var type: String?
 
-  // MARK: Marshal Initializers
-
-  /// Map a JSON object to this class using Marshal.
+  // MARK: SwiftyJSON Initializers
+  /// Initiates the instance based on the object.
   ///
-  /// - parameter object: A mapping from ObjectMapper
-  public init(object: MarshaledObject) {
-    name = try? object.value(for: SerializationKeys.name)
-    limit = try? object.value(for: SerializationKeys.limit)
-    href = try? object.value(for: SerializationKeys.href)
-    uri = try? object.value(for: SerializationKeys.uri)
-    id = try? object.value(for: SerializationKeys.id)
-    externalUrls = try? object.value(for: SerializationKeys.externalUrls)
-    offset = try? object.value(for: SerializationKeys.offset)
-    next = try? object.value(for: SerializationKeys.next)
-    total = try? object.value(for: SerializationKeys.total)
-    items = try? object.value(for: SerializationKeys.items)
-    type = try? object.value(for: SerializationKeys.type)
+  /// - parameter object: The object of either Dictionary or Array kind that was passed.
+  /// - returns: An initialized instance of the class.
+  public init(object: Any) {
+    self.init(json: JSON(object))
+  }
+
+  /// Initiates the instance based on the JSON that was passed.
+  ///
+  /// - parameter json: JSON object from SwiftyJSON.
+  public init(json: JSON) {
+    name = json[SerializationKeys.name].string
+    limit = json[SerializationKeys.limit].int
+    href = json[SerializationKeys.href].string
+    uri = json[SerializationKeys.uri].string
+    id = json[SerializationKeys.id].string
+    externalUrls = ExternalUrls(json: json[SerializationKeys.externalUrls])
+    offset = json[SerializationKeys.offset].int
+    next = json[SerializationKeys.next].string
+    total = json[SerializationKeys.total].int
+    if let items = json[SerializationKeys.items].array { self.items = items.map { Items(json: $0) } }
+    type = json[SerializationKeys.type].string
   }
 
   /// Generates description of the object in the form of a NSDictionary.

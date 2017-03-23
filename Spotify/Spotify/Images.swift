@@ -1,13 +1,13 @@
 //
 //  Images.swift
 //
-//  Created by Paul Griffin on 2017-03-22
+//  Created by Paul Griffin on 2017-03-23
 //  Copyright (c) . All rights reserved.
 //
 
 import Foundation
 
-public struct Images: Unmarshaling {
+public struct Images {
 
   // MARK: Declaration for string constants to be used to decode and also serialize.
   private struct SerializationKeys {
@@ -21,15 +21,22 @@ public struct Images: Unmarshaling {
   public var url: String?
   public var width: Int?
 
-  // MARK: Marshal Initializers
-
-  /// Map a JSON object to this class using Marshal.
+  // MARK: SwiftyJSON Initializers
+  /// Initiates the instance based on the object.
   ///
-  /// - parameter object: A mapping from ObjectMapper
-  public init(object: MarshaledObject) {
-    height = try? object.value(for: SerializationKeys.height)
-    url = try? object.value(for: SerializationKeys.url)
-    width = try? object.value(for: SerializationKeys.width)
+  /// - parameter object: The object of either Dictionary or Array kind that was passed.
+  /// - returns: An initialized instance of the class.
+  public init(object: Any) {
+    self.init(json: JSON(object))
+  }
+
+  /// Initiates the instance based on the JSON that was passed.
+  ///
+  /// - parameter json: JSON object from SwiftyJSON.
+  public init(json: JSON) {
+    height = json[SerializationKeys.height].int
+    url = json[SerializationKeys.url].string
+    width = json[SerializationKeys.width].int
   }
 
   /// Generates description of the object in the form of a NSDictionary.

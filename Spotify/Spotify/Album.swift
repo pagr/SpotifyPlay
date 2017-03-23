@@ -1,13 +1,13 @@
 //
 //  Album.swift
 //
-//  Created by Paul Griffin on 2017-03-22
+//  Created by Paul Griffin on 2017-03-23
 //  Copyright (c) . All rights reserved.
 //
 
 import Foundation
 
-public struct Album: Unmarshaling {
+public struct Album {
 
   // MARK: Declaration for string constants to be used to decode and also serialize.
   private struct SerializationKeys {
@@ -35,22 +35,29 @@ public struct Album: Unmarshaling {
   public var albumType: String?
   public var artists: [Artists]?
 
-  // MARK: Marshal Initializers
-
-  /// Map a JSON object to this class using Marshal.
+  // MARK: SwiftyJSON Initializers
+  /// Initiates the instance based on the object.
   ///
-  /// - parameter object: A mapping from ObjectMapper
-  public init(object: MarshaledObject) {
-    name = try? object.value(for: SerializationKeys.name)
-    href = try? object.value(for: SerializationKeys.href)
-    uri = try? object.value(for: SerializationKeys.uri)
-    id = try? object.value(for: SerializationKeys.id)
-    externalUrls = try? object.value(for: SerializationKeys.externalUrls)
-    availableMarkets = try? object.value(for: SerializationKeys.availableMarkets)
-    images = try? object.value(for: SerializationKeys.images)
-    type = try? object.value(for: SerializationKeys.type)
-    albumType = try? object.value(for: SerializationKeys.albumType)
-    artists = try? object.value(for: SerializationKeys.artists)
+  /// - parameter object: The object of either Dictionary or Array kind that was passed.
+  /// - returns: An initialized instance of the class.
+  public init(object: Any) {
+    self.init(json: JSON(object))
+  }
+
+  /// Initiates the instance based on the JSON that was passed.
+  ///
+  /// - parameter json: JSON object from SwiftyJSON.
+  public init(json: JSON) {
+    name = json[SerializationKeys.name].string
+    href = json[SerializationKeys.href].string
+    uri = json[SerializationKeys.uri].string
+    id = json[SerializationKeys.id].string
+    externalUrls = ExternalUrls(json: json[SerializationKeys.externalUrls])
+    if let items = json[SerializationKeys.availableMarkets].array { availableMarkets = items.map { $0.stringValue } }
+    if let items = json[SerializationKeys.images].array { images = items.map { Images(json: $0) } }
+    type = json[SerializationKeys.type].string
+    albumType = json[SerializationKeys.albumType].string
+    if let items = json[SerializationKeys.artists].array { artists = items.map { Artists(json: $0) } }
   }
 
   /// Generates description of the object in the form of a NSDictionary.

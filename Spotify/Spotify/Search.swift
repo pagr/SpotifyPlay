@@ -1,13 +1,13 @@
 //
 //  Search.swift
 //
-//  Created by Paul Griffin on 2017-03-22
+//  Created by Paul Griffin on 2017-03-23
 //  Copyright (c) . All rights reserved.
 //
 
 import Foundation
 
-public struct Search: Unmarshaling {
+public struct Search {
 
   // MARK: Declaration for string constants to be used to decode and also serialize.
   private struct SerializationKeys {
@@ -23,16 +23,23 @@ public struct Search: Unmarshaling {
   public var playlists: Playlists?
   public var albums: Albums?
 
-  // MARK: Marshal Initializers
-
-  /// Map a JSON object to this class using Marshal.
+  // MARK: SwiftyJSON Initializers
+  /// Initiates the instance based on the object.
   ///
-  /// - parameter object: A mapping from ObjectMapper
-  public init(object: MarshaledObject) {
-    tracks = try? object.value(for: SerializationKeys.tracks)
-    artists = try? object.value(for: SerializationKeys.artists)
-    playlists = try? object.value(for: SerializationKeys.playlists)
-    albums = try? object.value(for: SerializationKeys.albums)
+  /// - parameter object: The object of either Dictionary or Array kind that was passed.
+  /// - returns: An initialized instance of the class.
+  public init(object: Any) {
+    self.init(json: JSON(object))
+  }
+
+  /// Initiates the instance based on the JSON that was passed.
+  ///
+  /// - parameter json: JSON object from SwiftyJSON.
+  public init(json: JSON) {
+    tracks = Tracks(json: json[SerializationKeys.tracks])
+    artists = Artists(json: json[SerializationKeys.artists])
+    playlists = Playlists(json: json[SerializationKeys.playlists])
+    albums = Albums(json: json[SerializationKeys.albums])
   }
 
   /// Generates description of the object in the form of a NSDictionary.

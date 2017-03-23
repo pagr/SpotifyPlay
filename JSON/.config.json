@@ -1,9 +1,9 @@
 {
-    "destination_path": " /Users/paul/Documents/Projects/Spotify/Spotify/Spotify/Data/",
+    "destination_path": "output",
     "author_name": "Paul Griffin",
     "company_name": "",
     "construct_type": "struct",
-    "model_mapping_library": "Marshal",
+    "model_mapping_library": "SwiftlyJSON",
     "support_nscoding": false,
     "is_final_required": false,
     "is_header_included": false

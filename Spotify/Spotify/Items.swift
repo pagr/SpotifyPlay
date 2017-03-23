@@ -1,13 +1,13 @@
 //
 //  Items.swift
 //
-//  Created by Paul Griffin on 2017-03-22
+//  Created by Paul Griffin on 2017-03-23
 //  Copyright (c) . All rights reserved.
 //
 
 import Foundation
 
-public struct Items: Unmarshaling {
+public struct Items {
 
   // MARK: Declaration for string constants to be used to decode and also serialize.
   private struct SerializationKeys {
@@ -38,7 +38,7 @@ public struct Items: Unmarshaling {
     static let discNumber = "disc_number"
     static let tracks = "tracks"
     static let addedBy = "added_by"
-    static let public = "public"
+    static let `public` = "public"
     static let albumType = "album_type"
   }
 
@@ -70,44 +70,51 @@ public struct Items: Unmarshaling {
   public var discNumber: Int?
   public var tracks: Tracks?
   public var addedBy: AddedBy?
-  public var public: Bool? = false
+  public var `public`: Bool? = false
   public var albumType: String?
 
-  // MARK: Marshal Initializers
-
-  /// Map a JSON object to this class using Marshal.
+  // MARK: SwiftyJSON Initializers
+  /// Initiates the instance based on the object.
   ///
-  /// - parameter object: A mapping from ObjectMapper
-  public init(object: MarshaledObject) {
-    href = try? object.value(for: SerializationKeys.href)
-    addedAt = try? object.value(for: SerializationKeys.addedAt)
-    track = try? object.value(for: SerializationKeys.track)
-    durationMs = try? object.value(for: SerializationKeys.durationMs)
-    explicit = try? object.value(for: SerializationKeys.explicit)
-    type = try? object.value(for: SerializationKeys.type)
-    trackNumber = try? object.value(for: SerializationKeys.trackNumber)
-    snapshotId = try? object.value(for: SerializationKeys.snapshotId)
-    collaborative = try? object.value(for: SerializationKeys.collaborative)
-    id = try? object.value(for: SerializationKeys.id)
-    owner = try? object.value(for: SerializationKeys.owner)
-    availableMarkets = try? object.value(for: SerializationKeys.availableMarkets)
-    images = try? object.value(for: SerializationKeys.images)
-    followers = try? object.value(for: SerializationKeys.followers)
-    name = try? object.value(for: SerializationKeys.name)
-    uri = try? object.value(for: SerializationKeys.uri)
-    externalUrls = try? object.value(for: SerializationKeys.externalUrls)
-    genres = try? object.value(for: SerializationKeys.genres)
-    previewUrl = try? object.value(for: SerializationKeys.previewUrl)
-    externalIds = try? object.value(for: SerializationKeys.externalIds)
-    artists = try? object.value(for: SerializationKeys.artists)
-    album = try? object.value(for: SerializationKeys.album)
-    isLocal = try? object.value(for: SerializationKeys.isLocal)
-    popularity = try? object.value(for: SerializationKeys.popularity)
-    discNumber = try? object.value(for: SerializationKeys.discNumber)
-    tracks = try? object.value(for: SerializationKeys.tracks)
-    addedBy = try? object.value(for: SerializationKeys.addedBy)
-    public = try? object.value(for: SerializationKeys.public)
-    albumType = try? object.value(for: SerializationKeys.albumType)
+  /// - parameter object: The object of either Dictionary or Array kind that was passed.
+  /// - returns: An initialized instance of the class.
+  public init(object: Any) {
+    self.init(json: JSON(object))
+  }
+
+  /// Initiates the instance based on the JSON that was passed.
+  ///
+  /// - parameter json: JSON object from SwiftyJSON.
+  public init(json: JSON) {
+    href = json[SerializationKeys.href].string
+    addedAt = json[SerializationKeys.addedAt].string
+    track = Track(json: json[SerializationKeys.track])
+    durationMs = json[SerializationKeys.durationMs].int
+    explicit = json[SerializationKeys.explicit].boolValue
+    type = json[SerializationKeys.type].string
+    trackNumber = json[SerializationKeys.trackNumber].int
+    snapshotId = json[SerializationKeys.snapshotId].string
+    collaborative = json[SerializationKeys.collaborative].boolValue
+    id = json[SerializationKeys.id].string
+    owner = Owner(json: json[SerializationKeys.owner])
+    if let items = json[SerializationKeys.availableMarkets].array { availableMarkets = items.map { $0.stringValue } }
+    if let items = json[SerializationKeys.images].array { images = items.map { Images(json: $0) } }
+    followers = Followers(json: json[SerializationKeys.followers])
+    name = json[SerializationKeys.name].string
+    uri = json[SerializationKeys.uri].string
+    externalUrls = ExternalUrls(json: json[SerializationKeys.externalUrls])
+    if let items = json[SerializationKeys.genres].array { genres = items.map { $0.stringValue } }
+    previewUrl = json[SerializationKeys.previewUrl].string
+    externalIds = ExternalIds(json: json[SerializationKeys.externalIds])
+    if let items = json[SerializationKeys.artists].array { artists = items.map { Artists(json: $0) } }
+    album = Album(json: json[SerializationKeys.album])
+    isLocal = json[SerializationKeys.isLocal].boolValue
+    popularity = json[SerializationKeys.popularity].int
+    discNumber = json[SerializationKeys.discNumber].int
+    tracks = Tracks(json: json[SerializationKeys.tracks])
+    addedBy = AddedBy(json: json[SerializationKeys.addedBy])
+    `public` = json[SerializationKeys.`public`].boolValue
+    albumType = json[SerializationKeys.albumType].string
   }
 
   /// Generates description of the object in the form of a NSDictionary.
@@ -142,7 +149,7 @@ public struct Items: Unmarshaling {
     if let value = discNumber { dictionary[SerializationKeys.discNumber] = value }
     if let value = tracks { dictionary[SerializationKeys.tracks] = value.dictionaryRepresentation() }
     if let value = addedBy { dictionary[SerializationKeys.addedBy] = value.dictionaryRepresentation() }
-    dictionary[SerializationKeys.public] = public
+    dictionary[SerializationKeys.`public`] = `public`
     if let value = albumType { dictionary[SerializationKeys.albumType] = value }
     return dictionary
   }
